@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  background-color: #85586F;
+  text-align: right;
+  padding: 1rem 2rem 1rem 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul li{
+  display: inline;
+  margin: 0rem 2rem 0rem 2rem;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: larger;
+  color: #F8ECD1;
+}
+
+section{
+  width: 100%;
+  /* height: 80vh; */
+}
+
+
+.hero{
+  height: 40vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.heroText{
+  font-size: xx-large;
+  font-family: 'Segoe UI';
+}
+
+.about{
+  padding-top: 4rem;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  place-items: center;
+}
+.about-img {
+  width: auto;
+  height: 100%;
+  margin: 2rem;
+}
+
+.about-img img{
+  width: 100%;
+  height: 100%;
+
+}
+
+.about-context{
+  margin: 2rem;
+  width: 50%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-context p{
+  text-align: left;
+  height: 14rem;
+  overflow: hidden;
+}
+.about-context .subtitle{
+  color: royalblue;
+}
+
+/* news */
+
+.news_card{
+  box-shadow: 0 1px 1px 0 gray;
+  margin: 4rem;
+}
+
+.news-subtitle{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.news-subtitle .tag{
+  background-color: #0AA1DD;
+  text-transform: uppercase;
   color: white;
+  width: fit-content;
+  border-radius: 5%;
+  padding: 0.2rem;
+  font-size: x-small;
+  margin: 0 2rem 0 0;
+
+}
+.news-author{
+  background-color: #205375;
+  width: fit-content;
+  font-size: x-small;
+  color: white;
+  padding: 0.2rem;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.news_card .continue_read a {
+  background-color: #F66B0E;
+  color: #EFEFEF;
+  width: fit-content;
+  padding: 0 1rem 0 1rem;
+  font-size: large;
+  text-decoration: none;
+  align-items: center;
+  
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
